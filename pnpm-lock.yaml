@@ -8,18 +8,20 @@ specifiers:
   sass: ^1.58.1
   vite: ^4.1.1
   vite-plugin-dts: ^1.7.2
+  vite-plugin-libcss: ^1.0.5
   vue-tsc: ^1.0.24
 
 dependencies:
+  '@tomiaa/theme-chalk': 0.0.5
   '@tomiaa/utils': 0.1.6
   axios: 1.3.3
 
 devDependencies:
-  '@tomiaa/theme-chalk': 0.0.5
   conventional-changelog-cli: 2.2.2
   sass: 1.58.1
   vite: 4.1.1_sass@1.58.1
   vite-plugin-dts: 1.7.2_vite@4.1.1
+  vite-plugin-libcss: 1.0.5_vite@4.1.1
   vue-tsc: 1.0.24
 
 packages:
@@ -383,7 +385,7 @@ packages:
 
   /@tomiaa/theme-chalk/0.0.5:
     resolution: {integrity: sha512-EhRjWW4+HjL+IHTiXnrlfR3RHuwEiPZR4lViIYt/8G7xkdpoagfeudLfXumAUFIlItMIYERb3tN2lD0C7pNk4g==}
-    dev: true
+    dev: false
 
   /@tomiaa/utils/0.1.6:
     resolution: {integrity: sha512-cTrulqwLsRVz2Exnv3PWDP8sqaVp6hASIOkWT7tsXDYHn26BkkJqx3ke+r90uhtSd4/jh4tXdX0xdKg2GI6q3A==}
@@ -2088,6 +2090,14 @@ packages:
       - '@types/node'
       - rollup
       - supports-color
+    dev: true
+
+  /vite-plugin-libcss/1.0.5_vite@4.1.1:
+    resolution: {integrity: sha512-NUQwWhn9j8fpRBwHeDr35a3TuRP0xvdIHtJni+3DcnPcq4Vrg+G5A3ZtCJ8y2EC83G97tBJ36svPdiIVuBEfsQ==}
+    peerDependencies:
+      vite: ^2
+    dependencies:
+      vite: 4.1.1_sass@1.58.1
     dev: true
 
   /vite/4.1.1_sass@1.58.1:
