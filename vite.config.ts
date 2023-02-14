@@ -1,5 +1,6 @@
 import type { UserConfigExport } from "vite"
 import { defineConfig } from "vite"
+import libCss from "vite-plugin-libcss"
 
 // 生成打包后的 ts 类型文件
 import dts from "vite-plugin-dts"
@@ -11,6 +12,8 @@ export const config: UserConfigExport = {
       outputDir: "es", // 输出
       insertTypesEntry: true,
     }),
+    // 编译为库时，编译后的文件自动引入 css 文件
+    libCss(),
   ],
   // 打包为库
   build: {
